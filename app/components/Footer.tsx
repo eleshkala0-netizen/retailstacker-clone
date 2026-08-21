@@ -1,6 +1,6 @@
 export default function Footer(){
     return(
-        <footer className="w-full py-16 px-8 bg-ggray-900 text-white">
+        <footer className="w-full py-16 px-8 bg-gray-900 text-white">
             <section className="w-full  text-center">
                 <h3 className="text-2xl font-bold text-white mb-2">Retailstacker</h3>
                 <p className="text-gray-400  max-w-md mx-auto mb-12">The industry-standard software suite for

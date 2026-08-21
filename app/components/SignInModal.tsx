@@ -101,6 +101,8 @@ export default function SignInModal({onClose}: {onClose:()=> void}){
                         <input
                             id="email"
                             type="email"
+                            name="email"
+                            autoComplete="email"
                             placeholder="Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -116,6 +118,8 @@ export default function SignInModal({onClose}: {onClose:()=> void}){
                         <input
                             id="password"
                             type="password"
+                            name="password"
+                            autoComplete="current-password"
                             placeholder="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
