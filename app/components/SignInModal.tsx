@@ -79,7 +79,7 @@ export default function SignInModal({onClose}: {onClose:()=> void}){
                 <form onSubmit={handleSubmit} className="space-y-4">
                     {isSignup && (
                         <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                            <label htmlFor="name" className="block text-sm font-bold text-gray-900 mb-1">
                                 Full Name
                             </label>
                             <input
@@ -88,14 +88,14 @@ export default function SignInModal({onClose}: {onClose:()=> void}){
                                 placeholder="Full Name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 required
                             />
                         </div>
                     )}
 
                     <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                        <label htmlFor="email" className="block text-sm font-bold text-gray-900 mb-1">
                             Email
                         </label>
                         <input
@@ -106,13 +106,13 @@ export default function SignInModal({onClose}: {onClose:()=> void}){
                             placeholder="Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             required
                         />
                     </div>
 
                     <div>
-                        <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+                        <label htmlFor="password" className="block text-sm font-bold text-gray-900 mb-1">
                             Password
                         </label>
                         <input
@@ -123,7 +123,7 @@ export default function SignInModal({onClose}: {onClose:()=> void}){
                             placeholder="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             required
                         />
                     </div>
@@ -142,7 +142,7 @@ export default function SignInModal({onClose}: {onClose:()=> void}){
                         {isLoading ? "Please wait..." : (isSignup ? "Sign Up" : "Sign In")}
                     </button>
 
-                    <p className="text-sm text-center mt-4 text-gray-600">
+                    <p className="text-sm text-center mt-4 text-gray-800">
                         {isSignup ? "Already have an account?" : "Don't have an account?"}{" "}
                         <button
                             type="button"
